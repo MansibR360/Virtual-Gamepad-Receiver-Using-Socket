@@ -1,0 +1,30 @@
+[project]
+name = "gamepad-receiver"
+dynamic = ["version"]
+description = "Turn any phone into an Xbox 360 controller for your PC, over Wi-Fi."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Mansib Yasir" }]
+dependencies = ["vgamepad>=0.1.0"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: Microsoft :: Windows",
+    "Topic :: Games/Entertainment",
+]
+
+[project.urls]
+Homepage = "https://github.com/MansibR360/Virtual-Gamepad-Receiver-Using-Socket"
+
+[project.scripts]
+gamepad-receiver = "gamepad_receiver.cli:main"
+
+[tool.setuptools]
+packages = ["gamepad_receiver"]
+
+[tool.setuptools.dynamic]
+version = { attr = "gamepad_receiver.__version__" }
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
