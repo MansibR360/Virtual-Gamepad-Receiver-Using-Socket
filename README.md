@@ -1,5 +1,7 @@
 # Virtual Gamepad Receiver
 
+[![tests](https://github.com/MansibR360/Virtual-Gamepad-Receiver-Using-Socket/actions/workflows/tests.yml/badge.svg)](https://github.com/MansibR360/Virtual-Gamepad-Receiver-Using-Socket/actions/workflows/tests.yml)
+
 **Turn any phone into an Xbox 360 controller for your PC, over Wi-Fi.**
 
 The receiver runs on a Windows PC and listens for joystick and button input from a phone app. It drives a real virtual XInput controller, so every game and emulator that supports an Xbox pad works without any changes. It was originally built as the controller backend for [Project MAYA](https://mansibyasir.cloud/maya/), my Android cloud-gaming platform.
